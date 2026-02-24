@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>techwave</title>
     <style>
         .font-inter {
@@ -25,7 +26,7 @@
 
 <body class="">
     <nav
-        class="bg-[#1A0B2E] flex justify-between max-w-[1600px] h-[92px] border-b border-[#412567] items-center px-[200px] ">
+        class="bg-[#1A0B2E] flex justify-between max-w-[1600px] h-[92px] border-b border-[#412567] items-center px-[200px] " id="navbar">
         <h1 class="text-3xl font-bold text-amber-50 font-inter">Tech<span
                 class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">Wave</span></h1>
         <ul class="flex text-[16px] justify-center text-amber-50 font-inter">
@@ -37,9 +38,23 @@
             class="text-amber-50 text-[16px] bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-[16px] py-[12px] rounded-[25px] font-inter">Subscribe<i
                 class="fa-solid fa-angle-right "></i></button>
     </nav>
+    <nav id="navsmall"
+class="bg-[#1A0B2E] flex justify-between items-center 
+w-full h-[92px] border-b border-[#412567] px-4">
+
+    <h1 class="text-3xl font-bold text-amber-50 font-inter">
+        Tech
+        <span class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+            Wave
+        </span>
+    </h1>
+
+    <img src="./assets/hamburger-menu.png" alt="" class="w-6 h-6">
+
+</nav>
     <header class="">
-        <div class=" bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat grid justify-center items-center h-[760px]">
-            <div class="relative flex items-center justify-center h-[100%] w-[350px] mx-auto translate-y-[101px]">
+        <div  class=" bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat grid justify-center items-center h-[760px] w-full">
+            <div id= "hero-section" class="relative flex items-center justify-center h-[100%] w-[350px] mx-auto translate-y-[101px]">
                 <img src="./assets/hero-circle.png" alt="" class="w-full h-full object-contain w-full">
                 <img src="./assets/microphone.png" alt="" class="absolute w-[35%] ">
                 <span
@@ -62,18 +77,18 @@
     </header>
     <main>
         <section class="bg-[rgba(26,11,46,1)] h-[646px] grid justify-center items-center">
-            <div class="py-10 max-w-[1200px]">
+            <div class=" max-w-[1200px] h-[222px]" id="about">
                 <h2 class="text-5xl font-bold text-amber-50 text-center">About the Podcast</h2>
-                <p class="text-center text-amber-50 py-4 leading-10">
+                <p class="text-center text-amber-50 py-4 leading-6 px-10" id="abouttxt">
                     TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
                     We break down complex topics into digestible insights, explore productivity strategies that actually
                     work, <br>
                     and share stories of personal growth from industry leaders. <br><br>
                     Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
                 </p>
+                <hr class=" border border-[1px] border-[rgba(255,255,255,0.1)] max-w-[1200px] my-20">
             </div>
-            <hr class=" border border-[1px] border-[rgba(255,255,255,0.1)] max-w-[1200px]">
-            <div class="flex gap-10 justify-center items-center text-center">
+            <div class="flex gap-10 justify-center items-center text-center" id="grid1">
                 <div class="">
                     <h3 class="font-black text-[#00FF88] text-5xl">150K+</h3>
                     <p class="text-amber-50 uppercase text-lg my-4">Monthly Listeners</p>
@@ -94,7 +109,7 @@
         </section>
         <section class="bg-[#230E3D] w-full text-amber-50">
             <h3 class="text-5xl text-center font-bold pt-[120px] pb-[40px]">Why Choose TechWave</h3>
-            <div class="grid grid-cols-6 grid-rows-3 gap-7 mx-[200px] pb-[120px]">
+            <div class="grid grid-cols-6 grid-rows-3 gap-7 mx-[200px] pb-[120px]" id="grid2">
                 <div class="bg-[rgba(53,17,101,0.4)] p-[40px] rounded-4xl row-span-2 col-span-2 grid items-center">
                     <img src="./assets/headphone.png" alt="" class="w-[50px]">
                     <h4 class="text-2xl font-bold">Premium Audio Quality</h4>
@@ -128,7 +143,7 @@
         </section>
         <section class="bg-[#1A0B2E] text-amber-50 pt-[120px] pb-[120px]">
             <h3 class="text-5xl font-bold text-center pb-[40px]">Featured Episodes</h3>
-            <div class="flex gap-[30px] justify-center pb-[120px]">
+            <div class="flex gap-[30px] justify-center pb-[120px]" id="Featured">
                 <div class="">
                     <iframe width="380" height="214" src="https://www.youtube.com/embed/iadzYtX4ERU?si=McYlTh0v50RtbFsa"
                         title="YouTube video player" frameborder="0"
@@ -185,17 +200,17 @@
             </div>
             <div class="grid justify-center">
                 <h2 class="text-5xl font-bold pb-[40px] text-center">Meet the Host</h2>
-                <div
+                <div id="host"
                     class="max-w-[1200px] bg-[rgba(53,17,101,0.4)] flex justify-center items-center p-[40px] rounded-[40px] gap-6">
                     <img src="./assets/host.png" alt="" class="w-[200px]">
                     <div>
-                        <h4 class="font-bold text-4xl">Alex Kumar</h4>
+                        <h4 class="font-bold text-4xl" id="alex">Alex Kumar</h4>
                         <p class="text-[rgba(255,255,255,0.6)] pt-[12px]">Tech entrepreneur, productivity expert, and
                             lifelong learner. Alex has been in the tech
                             industry for over 10 years, working with startups and Fortune 500 companies. Through
                             TechWave, Alex shares insights from industry leaders and practical advice for anyone looking
                             to grow in tech.</p>
-                        <div class="flex gap-2 items-center pt-4">
+                        <div class="flex gap-2 items-center pt-4" id="icons">
                             <div class="border border-2 border-amber-50 rounded-[50%] p-2"><img
                                     src="./assets/linkedin.png" alt="" class="w-[16px]"></div>
                             <div class="border border-2 border-amber-50 rounded-[50%] p-2"><img src="./assets/x.png"
@@ -211,28 +226,32 @@
         </section>
     </main>
     <footer>
-  <div class="relative overflow-hidden w-full h-[412px]">
-    <img src="./assets/footer-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover -z-10">
-    
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center">
-      <h1 class="text-7xl font-bold text-amber-50 font-inter pb-5">
-        Tech
-        <span class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-          Wave
-        </span>
-      </h1>
+        <div class="relative overflow-hidden w-full h-[412px]">
+            <img src="./assets/footer-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover -z-10">
 
-      <div class="flex flex-wrap items-center justify-center text-amber-50 gap-6 pb-5">
-        <div class="flex gap-2 items-center"><img src="./assets/spotify.png" alt=""><span>Spotify</span></div>
-        <div class="flex gap-2 items-center"><img src="./assets/apple-podcast.png" alt=""><span class="whitespace-nowrap">Apple Podcast</span></div>
-        <div class="flex gap-2 items-center"><img src="./assets/youtube.png" alt=""><span>Youtube</span></div>
-        <div class="flex gap-2 items-center"><img src="./assets/twitter.png" alt=""><span>Twitter</span></div>
-      </div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center">
+                <h1 class="text-7xl font-bold text-amber-50 font-inter pb-5">
+                    Tech
+                    <span class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+                    Wave
+                    </span>
+                </h1>
 
-      <p class="text-amber-50">© 2026 TechWave Podcast. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+                <div class="flex flex-wrap items-center justify-center text-amber-50 gap-6 pb-5" id="footer">
+                    <div class="flex gap-2 items-center"><img src="./assets/spotify.png" alt=""><span>Spotify</span>
+                    </div>
+                    <div class="flex gap-2 items-center"><img src="./assets/apple-podcast.png" alt=""><span
+                            class="whitespace-nowrap">Apple Podcast</span></div>
+                    <div class="flex gap-2 items-center"><img src="./assets/youtube.png" alt=""><span>Youtube</span>
+                    </div>
+                    <div class="flex gap-2 items-center"><img src="./assets/twitter.png" alt=""><span>Twitter</span>
+                    </div>
+                </div>
+
+                <p class="text-amber-50">© 2026 TechWave Podcast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
